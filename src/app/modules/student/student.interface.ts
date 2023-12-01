@@ -47,6 +47,7 @@ export interface StudentModel extends Model<TStudent> {
   isUserExists(id: string): Promise<TStudent | null>;
 }
 
+/*------------------------------------*/
 // for creating instance
 
 // export interface StudentMethods {
@@ -58,3 +59,5 @@ export interface StudentModel extends Model<TStudent> {
 //   Record<string, never>,
 //   StudentMethods
 // >;
+
+/*------------------------------------*/

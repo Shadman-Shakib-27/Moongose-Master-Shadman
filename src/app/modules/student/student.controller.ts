@@ -1,4 +1,3 @@
-import { RequestHandler } from 'express';
 import httpStatus from 'http-status';
 import catchAsync from '../../utilis/catchAsync';
 import sendResponse from '../../utilis/sendResponse';
@@ -16,7 +15,7 @@ const getSingleStudent = catchAsync(async (req, res) => {
   });
 });
 
-const getAllStudents: RequestHandler = catchAsync(async (req, res) => {
+const getAllStudents = catchAsync(async (req, res) => {
   const result = await StudentServices.getAllStudentsFromDB();
 
   sendResponse(res, {
