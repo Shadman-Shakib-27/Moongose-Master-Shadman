@@ -1,6 +1,6 @@
-import config from '../config';
-import { TStudent } from '../modules/student/student.interface';
-import { Student } from '../modules/student/student.model';
+import config from '../../config';
+import { TStudent } from '../student/student.interface';
+import { Student } from '../student/student.model';
 import { TUser } from './user.interface';
 import { User } from './user.model';
 
